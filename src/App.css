@@ -1,3 +1,24 @@
 * {
   font-family: poppins;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  overflow-y: scroll;
+
+  overflow-x: hidden;
+}
+.hero {
+  background-image: url('./assets/bg.png'), url('./assets/african-american.png');
+
+  background-repeat: no-repeat, repeat-x, repeat-y;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    background-image: url('./assets/african-american.png'),
+      url('./assets/bg.png');
+    opacity: 0.9;
+  }
 }

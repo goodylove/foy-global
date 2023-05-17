@@ -34,16 +34,19 @@ const questionAndAnswer = [
 ];
 const FAQ = () => {
   return (
-    <div>
-      {questionAndAnswer.map((item) => {
-        return (
-          <FaqCard
-            key={item.id}
-            answer={item.answer}
-            question={item.question}
-          />
-        );
-      })}
+    <div className="md:w-[70%] w-full">
+      <h3 className="text-center font-[800]">FAQS</h3>
+      <div>
+        {questionAndAnswer.map((item) => {
+          return (
+            <FaqCard
+              key={item.id}
+              answer={item.answer}
+              question={item.question}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

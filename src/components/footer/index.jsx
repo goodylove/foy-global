@@ -5,8 +5,8 @@ import callImg from '../../assets/call.png';
 import messageImg from '../../assets/message.png';
 const Footer = () => {
   return (
-    <section className="bg-purple flex justify-center flex-col  md:w-[1336px] items-center">
-      <div className="flex justify-center w-[80%] ">
+    <section className="bg-purple  md:w-[100%]  pb-5 pt-5 ">
+      <div className="flex justify-center w-[100%] p-5 ">
         <div className="flex  md:flex-row  md:justify-evenly  w-full flex-col text-start text-[14px] text-white p-5">
           <div className="flex flex-col mt-3">
             <div className="text-white m-2">
@@ -47,19 +47,23 @@ const Footer = () => {
                 />
                 19 Okotie Eboh close, Off Awolowo road, Ikoyi.
               </span>
-              <span className="flex mt-2 mb-2 items-center">
-                <img src={messageImg} alt="icon" className="p-[8px]" />
-                info@foyglobalinvestments.com
-              </span>
-              <span className="flex items-center ">
-                <img src={callImg} alt="icon" className="p-[8px]" />
-                +2349116894070
-              </span>
+              <a href="mailTo: info@foyglobalinvestments.com">
+                <span className="flex mt-2 mb-2 items-center">
+                  <img src={messageImg} alt="icon" className="p-[8px]" />
+                  info@foyglobalinvestments.com
+                </span>
+              </a>
+              <a href="tel:+2349116894070">
+                <span className="flex items-center ">
+                  <img src={callImg} alt="icon" className="p-[8px]" />
+                  +2349116894070
+                </span>
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full h-[75px] bg-white m-5 flex justify-center p-[10px]">
+      <div className="w-full h-[75px] bg-white mt-5 flex justify-center p-[10px]">
         <div className="md:w-[80%] flex justify-between items-center md:flex-row  flex-col ">
           <div className="flex justify-evenly md:w-[15%] w-[37%]">
             <span>{socialmediaIcons.facebook()}</span>

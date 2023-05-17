@@ -12,17 +12,21 @@ const FaqCard = ({ answer, question }) => {
   };
   console.log(answer, question);
   return (
-    <div className="mt-4">
-      <div className="border-2 p-7  rounded-[14px]">
+    <div className="md:m-[30px] m-[10px]">
+      <div
+        className={`p-7  rounded-[14px]  shadow-lg m-5 ${
+          toggle ? 'border-purple border-2' : 'border-none'
+        }`}
+      >
         <span className="flex justify-between items-center">
-          <span className="text-[22px] font-[800] leading-[22px] text-black">
+          <span className="md:text-[22px] font-[800] leading-[22px] text-black text-[16px]">
             {question}
           </span>
           <span
             onClick={handleToggle}
             className={`text-[60px] rounded-full h-[50px] w-[50px] flex justify-center items-center shadow-md p-3 ${
-              toggle ? 'bg-purple' : 'bg-white'
-            } ${toggle ? 'text-white' : 'text-purple'}`}
+              toggle ? 'bg-purple text-white' : 'bg-white text-purple'
+            } `}
           >
             {toggle ? (
               <MdOutlineKeyboardArrowDown />
@@ -32,7 +36,7 @@ const FaqCard = ({ answer, question }) => {
           </span>
         </span>
         <div className={`${toggle ? 'visible' : 'hidden'}`}>
-          <p className="text-[14px] w-[636px]">{answer}</p>
+          <p className="text-[14px] md:w-[636px] w-full">{answer}</p>
         </div>
       </div>
     </div>

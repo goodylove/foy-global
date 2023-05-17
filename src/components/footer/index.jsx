@@ -72,7 +72,9 @@ const Footer = () => {
             <span>{socialmediaIcons.linkedin()}</span>
           </div>
           <div>
-            <span>© 2023 FOY Global Investments. All rights reserved</span>
+            <span className="text-[13px]">
+              © 2023 FOY Global Investments. All rights reserved
+            </span>
           </div>
           <div>
             <span>Privacy Policy</span>

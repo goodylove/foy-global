@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 0.3s ease;
 }
 body {
   width: 100vw;
@@ -14,6 +15,12 @@ body {
   background-image: url('./assets/bg.png'), url('./assets/african-american.png');
 
   background-repeat: no-repeat, repeat-x, repeat-y;
+}
+.is-open {
+  visibility: visible;
+}
+.is-closed {
+  visibility: hidden;
 }
 @media screen and (max-width: 768px) {
   .hero {

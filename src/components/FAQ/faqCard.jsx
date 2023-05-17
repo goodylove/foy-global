@@ -14,7 +14,7 @@ const FaqCard = ({ answer, question }) => {
   return (
     <div className="md:m-[30px] m-[10px]">
       <div
-        className={`p-7  rounded-[14px]  shadow-lg m-5 ${
+        className={`md:p-7  rounded-[14px]  shadow-lg m-5 p-3 ${
           toggle ? 'border-purple border-2' : 'border-none'
         }`}
       >

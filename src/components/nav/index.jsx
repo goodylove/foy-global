@@ -39,7 +39,7 @@ const Nav = () => {
       </div>
       {/* mobile */}
       <div
-        className={`flex flex-col justify-center  items-center  w-[50%] fixed right-0  h-[100vh] bg-white top-20 opacity-[1]  ${
+        className={`flex flex-col   items-center   w-[50%] fixed right-0  h-[100vh] bg-white top-20 opacity-[1]  ${
           toggleMenu ? 'is-open' : 'is-closed'
         }`}
       >
